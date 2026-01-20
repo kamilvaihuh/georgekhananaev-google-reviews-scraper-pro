@@ -42,7 +42,6 @@ RUN python -m venv venv
 ENV PATH="/app/venv/bin:$PATH"
 
 # Upgrade pip and install Python dependencies
-COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
